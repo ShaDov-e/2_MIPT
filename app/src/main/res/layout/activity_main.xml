@@ -13,19 +13,23 @@
         android:id="@+id/editText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="@string/enter_text"/>
+        android:hint="@string/enter_text"
+        android:minHeight="48dp"
+        android:autofillHints="" />
 
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:entries="@array/counting_options"/>
+        android:entries="@array/counting_options"
+        android:minHeight="48dp" />
 
     <Button
+        android:id="@+id/CountText"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/count"
-        android:onClick="countText"/>
+        android:onClick="countText"
+        android:text="@string/count" />
 
     <TextView
         android:id="@+id/resultText"
